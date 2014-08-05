@@ -1,0 +1,15 @@
+"Label": {
+	color: '#000',
+	font: {
+		fontFamily: 'monospace'
+	},
+	height: Ti.UI.SIZE,
+	width: "150dp"
+}
+
+"Switch":{
+	backgroundColor : "blue",
+	width : "100dp",
+	height : "30dp"
+}
+

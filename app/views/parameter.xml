@@ -1,0 +1,14 @@
+<Alloy>
+	<View id="param" class="container" layout="vertical" height="Ti.UI.SIZE" top="3dp" bottom="5dp">
+		<Label left="5%">Parameter</Label>
+		<Label id="parameter"></Label>
+		<Label left="5%">Sub Parameter</Label>
+		<Label id="subParameter"></Label>
+		<Label left="5%">Standard</Label>
+		<Label id="standard"></Label>
+		<Label left="5%">Pengajuan</Label>
+		<Label id="pengajuan"></Label>
+		<Label left="5%">Deviation</Label>
+		<Label id="deviation"></Label>
+	</View>
+</Alloy>

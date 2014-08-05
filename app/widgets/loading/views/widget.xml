@@ -1,0 +1,7 @@
+<Alloy>
+	<View class="container">
+		<View id="overlay"/>
+		<View id="loadingBox">
+		</View>
+	</View>
+</Alloy>

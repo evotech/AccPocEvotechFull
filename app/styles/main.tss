@@ -1,0 +1,33 @@
+
+".container": {
+	backgroundColor: "#f0f0f0"
+},
+".viewContent":{
+	left: '1%',
+	right : '1%'
+},
+".viewSubContent": {
+	left: '2%'
+},
+"#searchbar":{
+	showCancel: false,
+	hintText: 'Type here...'
+},
+"#listRegistrasi":{},
+".contentLabel":{
+	font:{
+		fontSize: 20
+	},
+	color: '#000000'
+},
+".subLabel": {
+	font:{
+		fontSize: 16
+	},
+	color: '#cccccc'
+},
+"#viewListReg":{
+	borderColor: "#0C1FF0",
+	borderWidth: 1,
+	left : 3, right : 3
+}

@@ -1,0 +1,30 @@
+
+".container": {
+	backgroundColor: "white"
+}
+
+"Label":{
+	color: "black",
+	font: {
+		fontFamily: 'monospace'
+	}
+}
+".scrollViewContent": {
+	showVerticalScrollIndicator: "true" ,
+	layout: "vertical",
+	height: "99%",
+	width: "99%",
+	borderColor: "#0C1FF0",
+	borderWidth: 1
+},
+
+".lblContent": {
+	left: '2%',
+	color: '#000000',
+	font: {}
+}
+
+".lblTitle": {
+	left: "1%",
+	color: "#AAAAAA"
+},

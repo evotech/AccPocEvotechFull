@@ -1,0 +1,21 @@
+<Alloy>
+	<NavigationWindow id="navBarList">
+		<Window id="main" class="container" layout="vertical" title="List">
+			<RightNavButton>
+				<Button title="Logout" onClick="logOut" />
+			</RightNavButton>
+			<Menu platform="android">
+				<MenuItem id="menuLogOut" title="Logout" onClick="logOut" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+			</Menu>
+			<View layout="horizontal" width="80%">
+				<ListView id="registrasi" onItemclick="clickRegistrasi">
+					<ListSection>
+						<ListItem title="Registrasi 1"></ListItem>
+						<ListItem title="Registrasi 2"></ListItem>
+					</ListSection>
+				</ListView>
+				<!-- <Require src="signature"></Require> -->
+			</View>
+		</Window>
+	</NavigationWindow>
+</Alloy>

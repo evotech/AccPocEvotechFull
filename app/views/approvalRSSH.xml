@@ -1,0 +1,21 @@
+<Alloy>
+	<Window id="rssh" class="container">
+		<ScrollView height="100%" layout="vertical">
+			<View borderWidth="1" borderColor="blue" layout="vertical" width="90%" height="Ti.UI.SIZE" bottom="1%">
+				
+				<Label class="subtitle" >DISCOUNT RATE</Label>
+				<Require src="parameter"></Require>
+				<Label class="subtitle">TENOR</Label>
+				<Require src="parameter"></Require>
+				<Label class="subtitle">DP NET</Label>
+				<Require src="parameter"></Require>
+			</View>
+			<Widget src="approval" id="app"></Widget>
+			<Label>Notepad</Label>
+			<TextArea hintText="Input Notepad"></TextArea>
+			<Label>Reject Reason</Label>
+			<TextArea hintText="Input Reject Reason" bottom="5%"></TextArea>
+			<Button onClick="submit">Submit</Button>
+		</ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,24 @@
+
+".container" : {
+  backgroundColor : "white"
+}
+
+"Button": {
+	width: "40%",
+	backgroundColor: "#0587d5",
+	color: "white",
+	bottom: "5dp",
+	borderRadius: 5,
+	backgroundSelectedColor: "#0070c1",
+	font: {
+		fontFamily: 'monospace'
+	}
+}
+
+"Label": {
+	color: "black",
+	top: "5dp",
+	font: {
+		fontFamily: 'monospace'
+	}
+}

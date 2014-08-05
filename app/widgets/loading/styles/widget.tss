@@ -1,0 +1,21 @@
+
+".container": {}
+
+"#overlay": {
+	top: 0,
+	left: 0,
+	right: 0,
+	bottom: 0,
+	backgroundColor: "rgba(0,0,0,0.1)"
+}
+
+"#loadingBox": {
+	backgroundColor: "rgba(0,0,0,0.1)",
+	width: 260,
+	height: 300
+}
+
+"#overlay[platform=android]":{
+	backgroundImage: "/images/hud/000000-0.6.png"
+}
+

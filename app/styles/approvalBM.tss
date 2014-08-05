@@ -1,0 +1,49 @@
+
+".container" : {
+  	backgroundColor : "#f0f0f0"
+}
+
+"Label":{
+	color : "black",
+	font : {
+		fontFamily: 'monospace'
+	}
+}
+"#blue": {
+	width: "40%",
+	backgroundColor: "#0587d5",
+	color: "white",
+	bottom: "5dp",
+	backgroundSelectedColor: "#0070c1",
+	font: {
+		fontFamily: 'monospace'
+	}
+}
+
+"Button": {
+	borderRadius: 5
+}
+
+".lblContent" : { 
+	left : '1%'
+}
+
+".lblSubContent" : {
+	left : '2%%'
+}
+
+"#viewSubmit" : {
+	layout : 'horizontal'
+}
+
+"#viewSwitchApproval": {
+	width: '100%'
+}
+
+"#switchApproval": {
+	right: '10dp',
+	style: Titanium.UI.Android.SWITCH_STYLE_CHECKBOX
+}
+"#lblApproval": {
+	right: '60dp'
+}

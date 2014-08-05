@@ -1,0 +1,7 @@
+<Alloy>
+	<View layout="horizontal" height="Ti.UI.SIZE" width="90%" bottom="3%">
+		<Label>Keputusan Akhir</Label>
+		<Switch id="basicSwitch" value="true" titleOn="Approve" titleOff="Reject" focusable="true"/>
+	</View>
+
+</Alloy>

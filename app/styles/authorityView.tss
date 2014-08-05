@@ -1,0 +1,9 @@
+
+".container" : {
+  backgroundColor : "#ffffff",
+  title : 'CD Level'
+}
+
+'Label' : {
+	color : '#000000'
+}

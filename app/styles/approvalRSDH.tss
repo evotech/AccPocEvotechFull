@@ -1,0 +1,24 @@
+
+".container" : {
+  backgroundColor : "white"
+}
+
+"TextField":{
+	width : "90%",
+	borderWidth: 1,
+	borderColor: "black",
+	backgroundColor: "#eaeaea",
+	opacity : "50%",
+	color : "black",
+	tintColor : "orange",
+	font : {
+		fontFamily: 'monospace'
+	}
+}
+
+"Label":{
+	color : "black",
+	font : {
+		fontFamily: 'monospace'
+	}
+}

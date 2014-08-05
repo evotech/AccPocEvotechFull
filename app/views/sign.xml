@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container" layout="vertical" layout="vertical">
+		<Label>Sign Below</Label>
+		<View id="viewPaint" borderWidth="1" borderColor="black" height="200dp" width="90%" top="5dp"></View>
+		<!-- <ImageView id="showPaint" height="30%" borderWidth="1" borderColor="red"></ImageView> -->
+		<Label id="blob"></Label>
+		<Button onClick="saveButton">Submit</Button>
+	</Window>
+</Alloy>

@@ -1,0 +1,46 @@
+".container": {
+	backgroundColor: "white",
+	exitOnClose : true
+},
+"#lblLogo": {
+	top: "70dp"
+}
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 14,
+		fontFamily: 'monospace'
+	}
+}
+"TextField": {
+	borderWidth: 1,
+	borderColor: "black",
+	backgroundColor: "#eaeaea",
+	width: "80%",
+	opacity: "50%",
+	color: "black",
+	tintColor: "orange",
+	font: {
+		fontFamily: 'monospace'
+	}
+}
+"#blue": {
+	width: "40%",
+	backgroundColor: "#0587d5",
+	color: "white",
+	backgroundSelectedColor: "#0070c1",
+	font: {
+		fontFamily: 'monospace'
+	}
+}
+"Button":{
+	backgroundColor: "white",
+	width: "70%",
+	color: "black",
+	font: {
+		fontFamily: 'monospace'
+	},
+	borderRadius: 10
+}

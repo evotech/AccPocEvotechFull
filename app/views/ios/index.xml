@@ -1,0 +1,13 @@
+<Alloy>
+	<NavigationWindow id="navBar">
+		<Window class="container" layout="vertical" title="Login" exitOnClose=true>
+			<TextField id="username" hintText="Username" top="40%"></TextField>
+			<TextField id="password" hintText="Password" top="5%"></TextField>
+			<View layout="horizontal" height="Ti.UI.SIZE" >
+				<Label>Remember me</Label>
+				<Switch id="basicSwitch" value="true" titleOn="yes" titleOff="no"/>
+			</View>
+			<Button top="5%" onClick="clickLogin">login</Button>
+		</Window>
+	</NavigationWindow>
+</Alloy>

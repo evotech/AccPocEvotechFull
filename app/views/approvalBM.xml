@@ -1,0 +1,47 @@
+<Alloy>
+	<Window class="container" layout="vertical" height="100%" id="winApproval">
+		<ListView id="listParameter" height="90%" top="3dp" onClick="onParamClick">
+			<Templates>
+				<ItemTemplate name="templates">
+					<View layout="vertical" width="99%" borderWidth="1" 
+						bindId='viewApproval' enabled="true">
+						<!-- <Label text='Level' class="lblContent"/>
+						<Label bindId='level' class='lblSubContent'/> -->
+						<Label text='No. Reg.' class="lblContent"/>
+						<Label bindId='noreg' class='lblSubContent'/>
+						<Label text="No. SR" class="lblContent"/>
+						<Label bindId='nosr' class='lblSubContent'/>
+						<Label text="No. Field" class="lblContent"/>
+						<Label bindId='nofield' class='lblSubContent'/>
+						<Label text="CD Sub Field" class="lblContent"/>
+						<Label bindId='cdsubfield' class='lblSubContent'/>
+						<Label text="Val. Standar" class="lblContent"/>
+						<Label bindId='valstandar' class='lblSubContent'/>
+						<Label text="Val. Actual" class="lblContent"/>
+						<Label bindId='valactual' class='lblSubContent'/>
+						<Label text="Val. Deviasi" class="lblContent"/>
+						<Label bindId='valdeviasi' class='lblSubContent'/>
+						<!--<Label text="Flag. Deviasi" class="lblContent"/>
+						<Label bindId='flagdeviasi' class='lblSubContent'/> -->
+						<Label text="Status" class="lblContent"/>
+						<Label bindId='status' class='lblSubContent'/>
+						<!-- Label left="5%" text="Num. Standar"/>
+						<Label bindId='numstandar' class='lblSubContent'/>
+						<Label left="5%" text="Num. Actual"/>
+						<Label bindId='numactual' class='lblSubContent'/>
+						<Label left="5%" text="Num. Deviasi"/>
+						<Label bindId='numdeviasi' class='lblSubContent'/> -->
+						<View id="viewSwitchApproval">
+							<Switch bindId="switchApproval" onChange="onChangeSwitchApproval" id="switchApproval" enabled="true"/>
+							<Label bindId="lblApproval" id="lblApproval"/>
+						</View>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="sectionParameter"></ListSection>
+		</ListView>
+		<View id="viewSubmit" height="10%">
+			<Button id="btnSubmit" title="Submit" onClick = 'submit' width="98%"/>
+		</View>
+	</Window>
+</Alloy>

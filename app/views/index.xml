@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container" layout="vertical" exitOnClose="true">
+		<Label id="lblLogo">TAMPILKAN LOGO ATAU IMAGE</Label>
+		<TextField id="username" hintText="Username" top="40%" borderRadius="5" value="BDG.S06261"></TextField>
+		<TextField id="password" hintText="Password" top="4dp" borderRadius="5" passwordMask="true" value="Password1"></TextField>
+		<View id="remember_me" layout="horizontal" height="Ti.UI.SIZE" width="80%" top="5dp">
+			<Switch value="true" id="switchRemember" style="Titanium.UI.Android.SWITCH_STYLE_CHECKBOX" borderColor="black" />
+			<Label left="3dp">Remember Me!</Label>
+		</View>
+		<Button id="blue" top="5%" onClick="clickLogin">Login</Button>
+	</Window>
+</Alloy>

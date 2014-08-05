@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="container" id="winAuthority">
+		<ListView id="listAuthority" onItemclick="onAuthClick">
+			<Templates>
+				<ItemTemplate name="tempAuth">
+					<View>
+						<Label bindId="lblAuth"></Label>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="listAuthSection"/>
+		</ListView>
+	</Window>
+</Alloy>

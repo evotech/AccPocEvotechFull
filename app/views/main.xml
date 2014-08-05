@@ -1,0 +1,37 @@
+<Alloy>
+	<Window id="main" class="container" layout="vertical" title="Main Menu" >
+		<Menu id="menuItem" platform="android">
+			<MenuItem id="menuChangePass" title="CP" onClick="chPass" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+			<MenuItem id="menuLogOut" title="L" onClick="logOut" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+			<MenuItem id="menuSync" title="S" onClick="sync" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+		</Menu>
+		<ListView id="listRegistrasi" onItemclick="clickRegistrasi">
+			<SearchView >
+				<SearchBar id="searchbar"/>
+			</SearchView>
+			<Templates>
+				<ItemTemplate name="listRegistrasiTemp">
+					<View layout="vertical" bindId="viewListRegistrasi" id="viewListReg">
+						<View layout="horizontal" class="viewContent">
+							<!-- <Label text="No.Reg : " class="contentLabel"/> -->
+							<Label bindId="lblNoReg" class="contentLabel"/>
+						</View>
+						<View layout="horizontal" class="viewSubContent">
+							<Label bindId="titleLblL1" text="L1" class="subLabel" />
+							<Label bindId="lblL1" class="subLabel"/>
+						</View>
+						<View layout="horizontal"class="viewSubContent">
+							<Label bindId="titleLblL2" text="L2" class="subLabel"/>
+							<Label bindId="lblL2" class="subLabel"/>
+						</View>
+						<View layout="horizontal"class="viewSubContent">
+							<Label bindId="titleLblL3" text="L3" class="subLabel"/>
+							<Label bindId="lblL3" class="subLabel"/>
+						</View>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="section"/>
+		</ListView>
+	</Window>
+</Alloy>

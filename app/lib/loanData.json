@@ -1,0 +1,34 @@
+[
+  {
+    "NO_AGGR": "01200202002302147",
+    "NO_REGISTRATION": "200202002302147",
+    "ST_AGGR": "OPEN",
+    "CD_FUNDING_COMP": null,
+    "CD_SP": "200202",
+    "TENOR": "36",
+    "DT_GOLIVE": null,
+    "CD_SALESMAN": "S0001",
+    "TYPE_LOAN": " ",
+    "TYPE_PAYMENT_MODE": " ",
+    "PAYMENT_FREQ": " ",
+    "AMT_DOWNPAYMENT": "75000000",
+    "AMT_LOAN": "111276000",
+    "AMT_TOT_PRIN": "75000000",
+    "AMT_TOT_INT": "36276000",
+    "AMT_TOT_PRIN_PAID": "0",
+    "AMT_TOT_INT_PAID": "0",
+    "AMT_PENALTY": "0",
+    "AMT_PENALTY_PAID": "0",
+    "AMT_OVERDUE": "0",
+    "AMT_OTR": "150000000",
+    "AMT_ADMIN_FEE": "1100000",
+    "AMT_INSTALLMENT": "3091000",
+    "DT_DUE_INST": null,
+    "DT_PREPAY": null,
+    "TYPE_INSTALLMENT": " ",
+    "DT_APPL": null,
+    "CD_SP_COLL": null,
+    "AMT_TOT_PENALTY": null
+  }
+]
+

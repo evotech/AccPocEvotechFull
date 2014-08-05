@@ -1,0 +1,68 @@
+<Alloy>
+	<TabGroup class="container" height="100%" layout="vertical" title="Detail" tabsBackgroundColor="red" tabsBackgroundSelectedColor="red">
+		<Menu id="menu" platform="android">
+			<MenuItem id="clickProcess" title="Process" onClick="clickProcess" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+		</Menu>
+		<Tab id="tabCustDetail" title="Cust. Detail" >
+			<Window layout="vertical">
+				<ScrollView class="scrollViewContent">
+					<Label text="No. Registration" class="lblTitle" />
+					<Label id='lblNoReg' class="lblContent"/>
+					<Label text="Flag PC" class="lblTitle"/>
+					<Label id='lblFlagPc' class="lblContent"/>
+					<Label text="Flag BCG" class="lblTitle"/>
+					<Label id='lblFlagBcg' class="lblContent"/>
+					<Label text="No. G" class="lblTitle"/>
+					<Label id='lblNoG' class="lblContent"/>
+					<Label text="CD Cust." class="lblTitle"/>
+					<Label id='lblCdCust' class="lblContent"/>
+					<Label text="CD Cust. Special" class="lblTitle"/>
+					<Label id='lblCdCustSpecial' class="lblContent"/>
+					<Label text="CD Title" class="lblTitle"/>
+					<Label id='lblCdTitle' class="lblContent"/>
+					<Label text="Name" class="lblTitle"/>
+					<Label id='lblName' class="lblContent"/>
+					<Label text="Address" class="lblTitle"/>
+					<Label id='lblAddr' class="lblContent"/>
+				</ScrollView>
+			</Window>
+		</Tab>
+		<Tab id="bank_account" title="Bank Account" >
+			<Window>
+				<ScrollView class="scrollViewContent">
+					<Label text="No. Aggr." class="lblTitle"/>
+					<Label id='lblAggrLoan' class="lblContent"/>
+					<Label text="No. Registration" class="lblTitle"/>
+					<Label id='lblNoRegLoan' class="lblContent"/>
+					<Label text="ST. Aggr." class="lblTitle"/>
+					<Label id='lblStAggrLoan' class="lblContent"/>
+					<Label text="CD Funding Comp" class="lblTitle"/>
+					<Label id='lblCdFundingCompLoan' class="lblContent"/>
+					<Label text="CD SP" class="lblTitle"/>
+					<Label id='lblCdSpLoan' class="lblContent"/>
+					<Label text="Tenor" class="lblTitle"/>
+					<Label id='lblTenorLoan' class="lblContent"/>
+					<Label text="DT Go Live" class="lblTitle"/>
+					<Label id='lblDtGoLiveLoan' class="lblContent"/>
+					<Label text="CD Salesman" class="lblTitle"/>
+					<Label id='lblCdSalesmanLoan' class="lblContent"/>
+					<Label text="Type Loan" class="lblTitle"/>
+					<Label id='lblTypeLoan' class="lblContent"/>
+					<Label text="Type Payment Mode" class="lblTitle"/>
+					<Label id='lblTypePaymentMode' class="lblContent"/>
+					<Label text="Payment Freq" class="lblTitle"/>
+					<Label id='lblPaymentFreq' class="lblContent"/>
+					<Label text="AMT Downpayment" class="lblTitle"/>
+					<Label id='lblAmtDownPayment' class="lblContent"/>
+					<Label text="AMT Loan" class="lblTitle"/>
+					<Label id='lblAmtLoan' class="lblContent"/>
+				</ScrollView>
+			</Window>
+		</Tab>
+		<Tab id="survey" title="Survey" >
+			<Window>
+				<Label>Tampilan Survey</Label>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>

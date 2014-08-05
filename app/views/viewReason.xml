@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" id="winViewReason">
+		<Label text="Reason" left="5%" right="5%"/>
+		<TextArea id="textAreaReason" height="20%" left="5%" right="5%"/>
+		<Button id="btnSubmit" title="Submit" onClick="submit" left="5%" right="5%"/>
+	</Window>
+</Alloy>

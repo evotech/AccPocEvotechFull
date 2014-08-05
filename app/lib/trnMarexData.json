@@ -1,0 +1,30 @@
+[
+  {
+    "NO_REGISTRATION": "200202002302147",
+    "NO_SR": "0",
+    "NO_FIELD": "175",
+    "CD_SUB_FIELD": "",
+    "VALUE_STANDAR": "  10.25000",
+    "VALUE_ACTUAL": "   8.75636",
+    "VALUE_DEVIASI": "  -1.49364",
+    "FLAG_DEVIASI": "Y",
+    "STATUS": "O",
+    "NUM_STANDAR": null,
+    "NUM_ACTUAL": null,
+    "NUM_DEVIASI": null
+  },
+  {
+    "NO_REGISTRATION": "200202002302147",
+    "NO_SR": "0",
+    "NO_FIELD": "182",
+    "CD_SUB_FIELD": "",
+    "VALUE_STANDAR": "   125000000",
+    "VALUE_ACTUAL": "   132000000",
+    "VALUE_DEVIASI": "   5.60000",
+    "FLAG_DEVIASI": "Y",
+    "STATUS": "O",
+    "NUM_STANDAR": null,
+    "NUM_ACTUAL": null,
+    "NUM_DEVIASI": null
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "CD_LEVEL": "BM",
+    "ID_USER": "BDG.S06261",
+    "CD_SP": "200202",
+    "FLAG_ACTIVE": "Y",
+    "EMAIL_ADDR": "dedy.dn@acc.co.id",
+    "NO_HP": " ",
+    "BRAND_ASTRA": "A",
+    "FLAG_NEW_USED": "A",
+    "NO_SR": "4"
+  },
+  {
+    "CD_LEVEL": "RRSH",
+    "ID_USER": "BDG.S06261",
+    "CD_SP": "200202",
+    "FLAG_ACTIVE": "Y",
+    "EMAIL_ADDR": " ",
+    "NO_HP": " ",
+    "BRAND_ASTRA": "A",
+    "FLAG_NEW_USED": "A",
+    "NO_SR": "4"
+  }
+]
