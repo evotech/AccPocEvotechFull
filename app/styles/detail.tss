@@ -6,7 +6,8 @@
 "Label":{
 	color: "black",
 	font: {
-		fontFamily: 'monospace'
+		fontFamily: 'monospace',
+		fontSize : 20
 	}
 }
 ".scrollViewContent": {

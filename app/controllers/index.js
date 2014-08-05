@@ -2,8 +2,8 @@
 var login = require('userLogin');
 
 //dummy
-Ti.App.Properties.setBool('keeplogin', true);
-Ti.App.Properties.setDouble('lastupdate', 99999999999999);
+// Ti.App.Properties.setBool('keeplogin', true);
+// Ti.App.Properties.setDouble('lastupdate', 99999999999999);
 
 function clickLogin() {
 	var authLogin = isAuthLogin();

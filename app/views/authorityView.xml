@@ -3,7 +3,7 @@
 		<ListView id="listAuthority" onItemclick="onAuthClick">
 			<Templates>
 				<ItemTemplate name="tempAuth">
-					<View>
+					<View id="viewAuth">
 						<Label bindId="lblAuth"></Label>
 					</View>
 				</ItemTemplate>

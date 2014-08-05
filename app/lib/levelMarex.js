@@ -46,7 +46,7 @@ function getLevelMarexHttp(param, callback) {
 	anXhr.onerror = function() {
 		setTimeout(function(){
 			getLevelMarexHttp(param, callback);
-		}, 2000);
+		}, 500);
 		Ti.API.info('The HTTP request failed');
 	};
 	// Send the request data.

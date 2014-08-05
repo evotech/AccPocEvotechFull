@@ -288,7 +288,12 @@ function chPass(e) {
 }
 
 function sync(e){
-	
+	//sync all
+	//update marex to server
+	//update bucketMarex to server
+	//update userPassword to server
+	//delete all table
+	//retrieve all data from server
 }
 // $.main.addEventListener('android:back', function(e) {
 // // $.menuItem.

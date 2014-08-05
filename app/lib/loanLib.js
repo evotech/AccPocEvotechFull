@@ -119,7 +119,7 @@ function getLoanHTTP(noaggr, cdsp, callback) {
 	anXhr.onerror = function() {
 		setTimeout(function() {
 			getLoanHTTP(noaggr, cdsp, callback);
-		}, 2000);
+		}, 500);
 		Ti.API.info('The HTTP request failed');
 	};
 	// Send the request data.

@@ -3,3 +3,18 @@
 	layout: 'vertical',
 	backgroundColor: "white"
 }
+
+"Label" : {
+	font :{
+		fontSize : 20
+	},
+	color : "#000000"
+	
+}
+
+"TextArea" : {
+	font :{
+		fontSize : 18
+	},
+	color : "#000000"
+}

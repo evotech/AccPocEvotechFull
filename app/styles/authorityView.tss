@@ -5,5 +5,16 @@
 }
 
 'Label' : {
-	color : '#000000'
+	color : '#000000',
+	font :{
+		fontSize : 20
+	},
+}
+
+"#viewAuth":{
+	top : '3%', bottom : '3%',
+	borderColor : "0C1FF0",
+	borderWidth : 1,
+	height : "99%",
+	width : "99%"
 }

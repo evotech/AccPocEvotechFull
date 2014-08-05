@@ -55,15 +55,15 @@ function updateBucketMarexHttp(param, callback, isFinal) {
 	// Define the callback.
 	anXhr.onload = function() {
 		// Handle the XML data.
-		Ti.API.info("response Text: " + this.responseText);
 		var json = JSON.parse(this.responseText);
+		Ti.API.info("response Text: " + json);
 
 		callback(true);
 	};
 	anXhr.onerror = function() {
 		setTimeout(function() {
 			updateBucketMarexHttp(param, callback);
-		}, 1000);
+		}, 500);
 		Ti.API.info('The HTTP request failed');
 	};
 	// Send the request data.
@@ -95,7 +95,7 @@ function getBucketMarexHttp(param, callback) {
 	Ti.API.info('bucket cdsp ' + param.cd_sp);
 	// Create an HTTPClient.
 	var anXhr = Ti.Network.createHTTPClient();
-	anXhr.setTimeout(10000);
+	anXhr.setTimeout(500);
 
 	// Define the callback.
 	anXhr.onload = function() {
@@ -164,22 +164,43 @@ function createBucketMarexTable() {
 	db.close();
 }
 
+exports.updateBucketMarexHttp = function(param, callback, isFinal){
+	updateBucketMarexHttp(param,callback,isFinal);
+};
+
+exports.updateBucketMarex = function(param, noreg, l) {
+	Ti.API.info(l);
+	if (l === "l1") {
+		updateBucketMarexL1(param, noreg);
+	} else if (l === "l2") {
+		updateBucketMarexL2(param, noreg);
+	} else if (l === "l3") {
+		updateBucketMarexL3(param, noreg);
+	} else {
+		return;
+	}
+	
+};
+
 function updateBucketMarexL1(param, noreg) {
 	var db = Ti.Database.open('_alloy_');
-	db.execute('UPDATE bucket_marex SET L1_USER = ?, L1_DATE = ?, L1_TIME = ?, ' + 'L1_RESULT = ?, L1_LEVEL = ? WHERE NO_REGISTRATION = ? ', + 
-	param.l1User, param.l1Date, param.l1Time, param.l1Result, param.l1Level, noreg);
+	db.execute('UPDATE bucket_marex SET L1_USER = ?, L1_DATE = ?, L1_TIME = ?, ' +
+	 'L1_RESULT = ?, L1_LEVEL = ? WHERE NO_REGISTRATION = ? ', +
+	 param.l1User, param.l1Date, param.l1Time, param.l1Result, param.l1Level, noreg);
 	db.close();
 }
 
 function updateBucketMarexL2(param, noreg) {
 	var db = Ti.Database.open('_alloy_');
-	db.execute('UPDATE bucket_marex SET L2_USER = ?, L2_DATE = ?, L2_TIME = ?, ' + 'L2_RESULT = ?, L2_LEVEL = ? WHERE alloy_id = ? ', +param.l2User, param.l2Date, param.l2Time, param.l2Result, param.l2Level, noreg);
+	db.execute('UPDATE bucket_marex SET L2_USER = ?, L2_DATE = ?, L2_TIME = ?, ' + 'L2_RESULT = ?, L2_LEVEL = ? WHERE NO_REGISTRATION = ? ', 
+	+param.l1User, param.l1Date, param.l1Time, param.l1Result, param.l1Level, noreg);
 	db.close();
 }
 
 function updateBucketMarexL3(param, noreg) {
 	var db = Ti.Database.open('_alloy_');
-	db.execute('UPDATE bucket_marex SET L3_USER = ?, L3_DATE = ?, L3_TIME = ?, ' + 'L3_RESULT = ?, L3_LEVEL = ? WHERE alloy_id = ? ', +param.l3User, param.l3Date, param.l3Time, param.l3Result, param.l3Level, noreg);
+	db.execute('UPDATE bucket_marex SET L3_USER = ?, L3_DATE = ?, L3_TIME = ?, ' + 'L3_RESULT = ?, L3_LEVEL = ? WHERE NO_REGISTRATION = ? ', 
+	+param.l1User, param.l1Date, param.l1Time, param.l1Result, param.l1Level, noreg);
 	db.close();
 }
 

@@ -41,6 +41,10 @@ function getMarex(param) {
 	}
 }
 
+exports.updMarexHttp = function(param, callback){
+	updateMarexHttp(param, callback);
+};
+
 function updateMarexHttp(param, callback){
 	// Create an HTTPClient.
 	var anXhr = Ti.Network.createHTTPClient();
@@ -59,7 +63,7 @@ function updateMarexHttp(param, callback){
 	anXhr.onerror = function() {
 		setTimeout(function() {
 			updateMarexHttp(param, callback);
-		}, 1000);
+		}, 500);
 		Ti.API.info('The HTTP request failed');
 	};
 	// Send the request data.
@@ -115,7 +119,7 @@ function getMarexHttp(noreg, callback) {
 	anXhr.onerror = function() {
 		setTimeout(function() {
 			getMarexHttp(noreg, callback);
-		}, 2000);
+		}, 500);
 		Ti.API.info('The HTTP request failed');
 	};
 	// Send the request data.
@@ -145,12 +149,14 @@ function createTableMarex() {
 	db.close();
 }
 
-function updateStatusMarex(status, alloyId){
+exports.updateStatusMarex = function (status, alloyId){
 	var db = Ti.Database.open('_alloy_');
+	Ti.API.info('status, marexlib, update, ' + status);
+	Ti.API.info('alloyId, marexlib, update, ' + alloyId);
 	db.execute('UPDATE marex SET STATUS=? WHERE alloy_id = ?', status, alloyId);
 	Ti.API.info('marex, update, rowAffected, ' + db.getRowsAffected());
 	db.close();
-}
+};
 
 function loadFile() {
 	var filename = "trnMarexData.json";

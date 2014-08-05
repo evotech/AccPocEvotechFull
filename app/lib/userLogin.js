@@ -35,7 +35,7 @@ function getUserLogin(param, callback) {
 			//Ti.App.Properties.setList('cdlevel', _cdlevel);
 			Ti.App.Properties.setString('cdsp', json[i].CD_SP);
 			Ti.App.Properties.setString('user', json[i].ID_USER);
-
+			Ti.API.info('userLogin, user, ' + json[i].ID_USER);
 			callback(true);
 		} else {
 			callback(false);
@@ -81,6 +81,7 @@ function getUserLoginHTTP(param, callback) {
 				// Ti.App.Properties.setList('cdlevel', _cdlevel);
 				Ti.App.Properties.setString('cdsp', json[i].CD_SP);
 				Ti.App.Properties.setString('user', json[i].ID_USER);
+				Ti.API.info('userLogin, user, ' + json[i].ID_USER);
 			}
 			callback(true);
 		} else {
@@ -90,7 +91,7 @@ function getUserLoginHTTP(param, callback) {
 	anXhr.onerror = function() {
 		setTimeOut(function() {
 			getUserLoginHTTP(param, callback);
-		}, 2000);
+		}, 500);
 		alert('The HTTP request failed, trying to reconnect');
 	};
 	// Send the request data.

@@ -1,7 +1,7 @@
 <Alloy>
 	<Window id="main" class="container" layout="vertical" title="Main Menu" >
 		<Menu id="menuItem" platform="android">
-			<MenuItem id="menuChangePass" title="CP" onClick="chPass" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+			<!-- <MenuItem id="menuChangePass" title="CP" onClick="chPass" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/> -->
 			<MenuItem id="menuLogOut" title="L" onClick="logOut" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
 			<MenuItem id="menuSync" title="S" onClick="sync" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
 		</Menu>

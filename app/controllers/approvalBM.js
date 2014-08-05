@@ -50,7 +50,6 @@ function cekLevelDeviasi(nofield, valueDeviasi) {
 	return level;
 }
 
-
 function bindDataApproval(noreg) {
 	marexs.fetch({
 		query : 'SELECT * FROM marex WHERE NO_REGISTRATION="' + noreg + '"'
@@ -178,16 +177,17 @@ function submit() {
 			status = "R";
 		}
 
-		var tempModel = Alloy.createModel('marex', {
-			STATUS : status,
-			NO_FIELD : item.noField,
-			NO_REGISTRATION : item.noReg,
-			alloy_id : item.properties.alloyId,
-		});
-		tempColl.add(tempModel);
 		//create object marex for each item
 		//save to temp collection
 		//pass to viewReason
+		var tempModel = Alloy.createModel('marex', {
+			STATUS : status,
+			NO_FIELD : item.properties.noField,
+			NO_REGISTRATION : item.properties.noReg,
+			alloy_id : item.properties.alloyId,
+		});
+		Ti.API.info('tempModel, ' + JSON.stringify(tempModel));
+		tempColl.add(tempModel);
 	}
 
 	createReasonView(tempColl);

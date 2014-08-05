@@ -72,7 +72,7 @@ function getCustHTTP(noreg,callback) {
 	anXhr.onerror = function() {
 		setTimeout(function(){
 			getCustHTTP(noreg, callback);
-		}, 2000);
+		}, 500);
 		Ti.API.info('The HTTP request failed');
 	};
 	// Send the request data.
