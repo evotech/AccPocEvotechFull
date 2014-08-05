@@ -45,18 +45,32 @@ function submit() {
 
 	//update bucketMarex,
 
+	var lvlUser = Ti.App.Properties.getString('cdlevel', null);
 	var isFinal = false;
 	//cek for final approval to get status
 
+	//getLevel
+	var types = '';
+	if (lvlUser === 'BM') {
+		types = 'L1';
+	} else if (lvlUser === 'RRSH') {
+		types = 'L2';
+	} else if (lvlUser === 'RRSDH') {
+		types = 'L3';
+	} else {
+
+	}
+
 	var paramNotFinal = {
-		type_s : 'U',
+		type_s : types,
 		no_reg : arr[0].NO_REGISTRATION,
 		id_user : Ti.App.Properties.getString('user', null),
-		level : Ti.App.Properties.getString('cdlevel', null),
+		level : lvlUser,
 		status : 'A',
 		reason : $.textAreaReason.value
 	};
-
+	
+	Ti.API.info('viewReason, paramnotFinal, ' + JSON.stringify(paramNotFinal));
 	var paramFinal = {
 		type_s : 'U',
 		no_reg : arr[0].NO_REGISTRATION,
@@ -77,7 +91,7 @@ function submit() {
 	}
 	var date = new Date();
 	var param = new Object();
-	var userLv = Ti.App.Properties.getString('cdlevel', null);
+	var userLv = lvlUser;
 	param = {
 		l1User : Ti.App.Properties.getString('user'),
 		l1Date : date.toUTCString(),
@@ -90,17 +104,17 @@ function submit() {
 	if (isFinal) {
 
 	} else {
-		if (userLv === 'BM') {
+		if (lvlUser === 'BM') {
 			Ti.API.info('updateBucketMarex BM');
 			param.l1Result = 'BM';
 			param.l1Level = 'BM';
 			bucketMarexLib.updateBucketMarex(param, param.noreg, "l1");
-		} else if (userLv === 'RRSH') {
+		} else if (lvlUser === 'RRSH') {
 			Ti.API.info('updateBucketMarex RRSH');
 			param.l1Result = 'RRSH';
 			param.l1Level = 'RRSH';
 			bucketMarexLib.updateBucketMarex(param, param.noreg, "l2");
-		} else if (userLv === 'RRSDH') {
+		} else if (lvlUser === 'RRSDH') {
 			Ti.API.info('updateBucketMarex RRSDH');
 			param.l1Result = 'RRSDH';
 			param.l1Level = 'RRSDH';

@@ -55,7 +55,7 @@ function updateMarexHttp(param, callback){
 	anXhr.onload = function() {
 		// Handle the XML data.
 		var json = JSON.parse(this.responseText);
-		Ti.API.info("marex, responseText : " + json);
+		Ti.API.info("marex, responseText : " + JSON.stringify(json));
 
 		callback(true);
 

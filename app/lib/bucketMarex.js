@@ -56,7 +56,7 @@ function updateBucketMarexHttp(param, callback, isFinal) {
 	anXhr.onload = function() {
 		// Handle the XML data.
 		var json = JSON.parse(this.responseText);
-		Ti.API.info("response Text: " + json);
+		Ti.API.info("response Text: " + JSON.stringify(json));
 
 		callback(true);
 	};
@@ -86,6 +86,7 @@ function updateBucketMarexHttp(param, callback, isFinal) {
 			status : param.status
 		};
 	}
+	Ti.API.info('marex bucket, param, update, '+ JSON.stringify(param));
 	anXhr.send(JSON.stringify(param));
 }
 
@@ -136,7 +137,7 @@ function getBucketMarexHttp(param, callback) {
 	anXhr.onerror = function() {
 		setTimeout(function() {
 			getBucketMarexHttp(param, callback);
-		}, 2000);
+		}, 500);
 		Ti.API.info('The HTTP request failed');
 	};
 	// Send the request data.
